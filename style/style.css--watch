@@ -1,0 +1,383 @@
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Bold.woff2") format("woff2"), url("../fonts/NotoSans-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans.woff2") format("woff2"), url("../fonts/NotoSans.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "NotoSans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  color: white;
+  min-width: 320px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+
+.box-head {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.box-head__caption {
+  padding-top: 121px;
+  margin-bottom: 25px;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.46;
+  color: #fff;
+}
+.box-head__desk {
+  max-width: 632px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .box-head__caption {
+    font-size: 28px;
+    font-weight: 900;
+  }
+  .box-head__desk {
+    max-width: 355px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+@media (max-width: 375px) {
+  .box-head__caption {
+    font-size: 24px;
+  }
+  .box-head__desk {
+    font-size: 14px;
+  }
+}
+.btn {
+  display: inline-block;
+  border: 1px solid #B82121;
+  background-color: #B82121;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.3;
+  text-align: center;
+  padding: 20px 49px 20px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #B82121;
+}
+.btn--sm {
+  padding: 20px 34px 20px;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 15px 35px 15px;
+    font-weight: 700;
+  }
+  .btn--sm {
+    padding: 15px 25px 15px;
+    font-weight: 700;
+  }
+}
+.container {
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
+.hero {
+  background-image: url(../images/header/Hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero__wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.hero__content {
+  flex-grow: 1;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+}
+.hero__caption {
+  font-family: "NotoSans", Arial, Helvetica, sans-serif;
+  font-size: 55px;
+  line-height: 1.27;
+  font-weight: 900;
+  color: #fff;
+  max-width: 607px;
+  margin-bottom: 25px;
+}
+.hero__caption-georgian {
+  color: #B82121;
+}
+.hero__desk {
+  max-width: 501px;
+  margin-bottom: 35px;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  line-height: 0;
+  padding-top: 10px;
+}
+.header__logo-img {
+  max-width: 133px;
+  max-height: 66px;
+}
+.header__list {
+  display: flex;
+}
+.header__item {
+  padding: 0 30px;
+}
+.header__link {
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.3;
+  position: relative;
+}
+.header__link::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0;
+  bottom: -2px;
+  left: 0;
+  background-color: #B82121;
+  transition: 0.3s;
+}
+.header__link:hover::after {
+  width: 100%;
+  color: #B82121;
+}
+.header__social {
+  display: flex;
+}
+.header__social-item-list {
+  line-height: 0;
+  padding: 0 7px;
+}
+.header__contact-numb {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 400;
+}
+.header__contact-numb:hover {
+  color: #B82121;
+  transition: 0.3s;
+}
+.header__social-item {
+  display: block;
+}
+.header__social-item:hover {
+  transform: scale(1.2);
+}
+.header__social-item svg {
+  width: 20px;
+  height: 20px;
+}
+.header__btn-menu {
+  display: none;
+}
+
+@media (max-width: 1260px) {
+  .hero__content {
+    padding: 50px 20px;
+  }
+
+  .header__logo {
+    padding-left: 20px;
+  }
+  .header__item {
+    padding: 0 15px;
+  }
+  .header__social {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 976px) {
+  .header__contact-numb {
+    display: none;
+  }
+  .header__item {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__caption {
+    align-items: center;
+    font-size: 37px;
+    font-weight: 900;
+    max-width: 517px;
+  }
+  .hero__desk {
+    max-width: 450px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .header__btn-menu {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+  }
+  .header__line {
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    border-color: #fff;
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+  }
+  .header__line:nth-child(1) {
+    top: 0;
+  }
+  .header__line:nth-child(2) {
+    top: 9px;
+  }
+  .header__line:nth-child(3) {
+    top: 18px;
+  }
+}
+@media (max-width: 425px) {
+  .hero__content {
+    text-align: center;
+    padding: 150px 0;
+  }
+  .hero__caption {
+    text-align: center;
+    font-size: 32px;
+    padding: 0 10px;
+  }
+  .hero__desk {
+    text-align: center;
+    font-weight: 400;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 375px) {
+  .hero__caption {
+    font-size: 26px;
+  }
+  .hero__desk {
+    font-size: 14px;
+  }
+}
+.taste {
+  background-image: url(../images/taste/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.taste__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  padding: 0 auto;
+}
+.taste__col:not(:last-child) {
+  margin-right: 60px;
+}
+.taste__card {
+  text-align: center;
+}
+.taste__img {
+  width: 287px;
+  height: 287px;
+  margin-bottom: 40px;
+}
+.taste__text {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 44px;
+}
+.taste__batton {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1260px) {
+  .taste__row {
+    padding: 0 20px;
+  }
+  .taste__col:not(:last-child) {
+    margin-right: 40px;
+  }
+  .taste__text {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 1260px) and (max-width: 976px) {
+  .taste__img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 40px;
+  }
+  .taste__text {
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .taste__row {
+    display: flex;
+    flex-direction: column;
+  }
+  .taste__col:not(:last-child) {
+    margin-right: 0;
+  }
+  .taste__text {
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 18px;
+    width: 262px;
+  }
+}
+
+/*# sourceMappingURL=style.css--watch.map */
