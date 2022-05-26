@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Georgean restaurant</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
@@ -34,10 +35,10 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="header__social header__social-click">
+                    <div class="header__social">
                         <div class="header__social-item-list">
-                            <a href="tel:+38 (050) 123 45 67" class="header__social-item">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a href="tel:+38 (050) 123 45 67" class="header__social-item header__social-click">
+                                <svg class="header__social-phone" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M19.4556 14.678L16.6646 11.8869C15.6678 10.8901 13.9732 11.2889 13.5745 12.5847C13.2754 13.4819 12.2786 13.9803 11.3815 13.7809C9.3879 13.2825 6.69652 10.6908 6.19812 8.59746C5.89907 7.70029 6.49716 6.70349 7.39428 6.40448C8.69013 6.00576 9.08886 4.31119 8.09205 3.31438L5.30099 0.523324C4.50354 -0.174441 3.30738 -0.174441 2.60961 0.523324L0.715678 2.41726C-1.17826 4.41087 0.915039 9.69395 5.60003 14.3789C10.285 19.0639 15.5681 21.2569 17.5617 19.2633L19.4556 17.3694C20.1535 16.5719 20.1535 15.3757 19.4556 14.678Z" fill="white"/>
                                 </svg>
                                 <span class="header__contact-numb">+38 (050) 123 45 67</span>
@@ -125,16 +126,73 @@
                     </div>
                 </div>
             </div>
-            <div class="taste__batton">
+            <div class="taste__button">
                 <a href="#" class="btn btn--sm">ПЕРЕЙТИ К ДОСТАВКЕ</a>
             </div>
         </div>
     </section>
     <section class="menu">
-        <div>asfgdsggd</div>
+        <div class="container">
+            <div class="box-head">
+                <h2 class="box-head__caption">Меню</h2>
+                <p class="box-head__desk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna hendrerit convallis aliquam consequat
+                turpis.</p>
+            </div>
+        </div>
+        <div class="menu__wrap">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide menu__one">
+                        <div class="menu__card">
+                            <p class="menu__info">Супы</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide menu__two">
+                        <div class="menu__card">
+                            <p class="menu__info">Блюда на мангале</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide menu__three">
+                        <div class="menu__card">
+                            <p class="menu__info">Горячие блюда</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide menu__four">
+                        <div class="menu__card">
+                            <p class="menu__info">Соусы</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide menu__five">
+                        <div class="menu__card">
+                            <p class="menu__info">Выпечка</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide menu__six">
+                        <div class="menu__card">
+                            <p class="menu__info">Салаты</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide menu__seven">
+                        <div class="menu__card">
+                            <p class="menu__info">Холодные закуски</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div>
+                
+            </div>
+                    
+
+        </div>
     </section>
+
+
 </main>
 
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="./main.js"></script>
 
 </body>

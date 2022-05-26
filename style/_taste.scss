@@ -51,7 +51,7 @@
         color: #fff;       
     }
 
-    &__batton {
+    &__button {
         display: flex;
         justify-content: center;
     }
@@ -62,7 +62,7 @@
     .taste {
         &__text {
             font-size: 15px;
-            font-size: 500;     
+            max-width: 500px;     
         }
     }
 }
@@ -78,7 +78,6 @@
         &__col {
             width: 100%;
             text-align: center;
-            padding: 30px 45px;
         }
 
         &__text {

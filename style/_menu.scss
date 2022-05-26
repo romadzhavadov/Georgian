@@ -1,0 +1,111 @@
+.menu {
+    background-image: url(../images/menu/white-talcume-powder-explosion-black\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 69px 0 80px;
+    overflow: hidden;
+    cursor: pointer;
+
+    &__card {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__info {
+        font-size: 24px;
+        line-height: 2.4;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__one {
+        @include background('../images/menu/Супы.jpg');
+        
+        &:hover {
+            background-image: url(../images/menu/Супы.jpg);
+        }
+    }
+
+    &__two {
+        @include background('../images/menu/Блюда\ на\ мангале.jpg'); 
+
+        &:hover {
+            background-image: url(../images/menu/Блюда\ на\ мангале.jpg);
+        }
+    }
+
+    &__three {
+        @include background('../images/menu/Горячие\ блюда.jpg'); 
+
+        &:hover {
+            background-image: url(../images/menu/Горячие\ блюда.jpg);
+        }
+    }
+
+    &__four {
+        @include background('../images/menu/Соусы.jpg'); 
+
+        &:hover {
+            background-image: url(../images/menu/Соусы.jpg);
+        }
+    }
+
+    &__five {
+        @include background('../images/menu/Выпечка.jpg');
+        
+        &:hover {
+            background-image: url(../images/menu/Выпечка.jpg);
+        }
+    }
+
+    &__six {
+        @include background('../images/menu/Салаты.jpg'); 
+
+        &:hover {
+            background-image: url(../images/menu/Салаты.jpg);
+        }
+    }
+
+    &__seven {
+        @include background('../images/menu/Холодные\ закуски.jpg'); 
+
+        &:hover {
+            background-image: url(../images/menu/Холодные\ закуски.jpg);
+        }
+    }
+}
+
+.swiper-slide {
+    width: 262px;
+    height: 508px;
+}
+
+.swiper-pagination-bullet {
+    display: none;
+}
+
+.swiper-button-prev {
+    width: 23px;
+    height: 40px;
+    background-image: url(../images/menu/prev.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-button-next {
+    width: 23px;
+    height: 40px;
+    background-image: url(../images/menu/next.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    content: '';
+    display: none;
+}
